@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --clr-primary: #ebad2d;
+  --clr-grey-1: #c7c7c7;
+  --clr-grey-3: #f2f2f2;
+  --clr-grey-10: #454545;
+  --clr-black-dark: #111;
+  --clr-black-dark-blur: rgba(0, 0, 0, 0.6);
+  --clr-black-light: #1f1e1c;
+  --transition: all 0.4s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 95%;
+  max-width: 1408px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-grey-1);
+  font-size: 1.5rem;
+  line-height: 0;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.section__line {
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(117deg,
+      #c38814 16.67%,
+      #f0c167 52.77%,
+      #c38814 83.33%);
+}
+
+.section__header__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.section__header__flex button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--clr-primary);
+  background: var(--clr-grey-10);
+  padding: 12px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--clr-grey-1);
+}
+
+.section__header__flex p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--clr-grey-1);
+}
+
+.section__header__flex select {
+  border-radius: 8px;
+  border: 1px solid #ababab;
+  background: #181818;
+  font-size: 1.8rem;
+  padding: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--clr-grey-1);
+}
+
+/*  media query */
+/*  375px , 576px,  768px, 992px, and 1200px */
+@media screen and (min-width: 375px) and (max-width: 576px) {
+  html {
+    font-size: 55%;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  a {
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 578px) and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  html {
+    font-size: 60%;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  html {
+    font-size: 62%;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1408px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}

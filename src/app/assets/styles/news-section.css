@@ -1,0 +1,100 @@
+.news__section {
+  background: var(--clr-black-dark);
+  padding: 14rem 0;
+}
+
+.news__slider {
+  margin-top: 6.4rem;
+  position: relative;
+}
+
+.swiper-button-next {
+  background: url(../images/arrow-right.svg), #575757;
+  background-repeat: no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-fill: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid var(--clr-primary);
+  position: absolute;
+  right: 0px;
+}
+.swiper-button-prev {
+  background: url(../images/arrow-right.svg), #575757;
+  background-repeat: no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid var(--clr-primary);
+  transform: rotate(180deg);
+  position: absolute;
+  left: 0;
+}
+.swiper-button-prev.swiper-button-disabled {
+  color: #8e8e8e;
+  background: none;
+  background: url(../images/arrow-left.svg), #575757;
+  background-repeat: no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  transform: rotate(0);
+  border-color: #2e2d2d;
+  width: 40px;
+  height: 40px;
+  right: 0px;
+}
+.swiper-button-next.swiper-button-disabled {
+  color: #8e8e8e;
+  background: none;
+  background: url(../images/arrow-left.svg), #575757;
+  background-repeat: no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  transform: rotate(0);
+  border-color: #2e2d2d;
+  transform: rotate(180deg);
+  width: 40px;
+  height: 40px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper {
+  height: auto;
+}
+
+@media screen and (max-width: 200px) {
+  .swiper-container {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .swiper-container {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-container {
+    width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-container {
+    width: 1200px;
+  }
+}

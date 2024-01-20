@@ -1,0 +1,155 @@
+.media__section {
+  background: var(--clr-black-light);
+  padding: 140px 0;
+  position: relative;
+}
+
+.position {
+  position: absolute;
+}
+
+.media__section .container {
+  position: relative;
+  z-index: 22;
+}
+
+.actiors__section__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.media__title__flex {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.media__title__flex p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--clr-grey-1);
+}
+
+.media__section__line {
+  height: 1px;
+  width: 100%;
+  background: #ababab;
+  margin-bottom: 24px;
+}
+
+.media-video {
+  margin-top: 40px;
+}
+
+.media-select__date {
+  color: #fff;
+  font-size: 24px;
+  border: 1px solid #fff;
+  width: 174px;
+  outline: none;
+  padding: 10px;
+  background: #222;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.option {
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  background: #2222;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.media-select__date :hover {
+  border: 1px solid var(--clr-primary);
+}
+
+.media__section__grid__one {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 24px;
+  row-gap: 8px;
+}
+
+.media__section__grid__one img {
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+  object-fit: cover;
+}
+
+.grid__item {
+  overflow: hidden;
+}
+
+.grid__item:hover img {
+  transform: scale(1.1);
+}
+
+.grid__one__item-1 img,
+.grid__one__item-3 img,
+.grid__one__item-7 img,
+.grid__one__item-8 img,
+.grid__one__item-9 img {
+  max-width: 211px;
+  max-height: 128px;
+}
+
+.grid__one__item-2,
+.grid__one__item-4,
+.grid__one__item-6 {
+  grid-row-start: span 2;
+}
+
+.grid__one__item-2 img,
+.grid__one__item-4 img,
+.grid__one__item-6 img {
+  max-width: 211px;
+  max-height: 264px;
+}
+
+.media__section__grid__two {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 8px;
+  column-gap: 24px;
+}
+
+.grid__item2 {
+  overflow: hidden;
+}
+
+.grid__item2 img {
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+}
+
+.grid__item2:hover img {
+  transform: scale(1.1);
+}
+
+.grid__two__item-2,
+.grid__two__item-4 {
+  grid-row-start: span 2;
+  grid-column-start: span 2;
+}
+
+.grid__two__item-1 img,
+.grid__two__item-3 img,
+.grid__two__item-5 img,
+.grid__two__item-6 img {
+  max-width: 220px;
+  max-height: 128px;
+}
+
+.grid__two__item-2 img,
+.grid__two__item-4 img {
+  max-width: 440px;
+  max-height: 264px;
+}

@@ -1,0 +1,30 @@
+.title__wrapp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  /* width: max-content; */
+}
+.title__wrapp:hover {
+  cursor: pointer;
+}
+.title__wrapp h2 {
+  color: var(--clr-grey-3);
+  transition: var(--transition);
+}
+.title__wrapp:hover h2 {
+  color: var(--clr-primary);
+}
+.title__wrapp svg {
+  margin-top: 5px;
+}
+.title__wrapp svg path {
+  transition: var(--transition);
+  stroke: #f2f2f2;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.title__wrapp:hover svg path {
+  stroke: var(--clr-primary);
+  transform: rotate(0deg);
+}
